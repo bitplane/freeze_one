@@ -1,10 +1,11 @@
 [project]
 name = "freeze_one"
 description = "Get the 'pip freeze' line for one package"
-version = "0.2.0"
+version = "0.2.1"
 authors = [
     { name = "Gareth Davidson", email = "gaz@bitplane.net" }
 ]
+readme = "README.md"
 dependencies = [
     "pip>=23"
 ]
