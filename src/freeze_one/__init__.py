@@ -14,6 +14,7 @@ def freeze_one(name: str, paths=None) -> str:
         local_only=False, skip=(), user_only=False
     ):
         if dist.canonical_name == canonical_target:
-            return str(FrozenRequirement.from_dist(dist)).rstrip()
+            lines = str(FrozenRequirement.from_dist(dist)).rstrip()
+            return lines.split("\n")[-1]
 
     raise ValueError(f"Package {name!r} not found in environment")
